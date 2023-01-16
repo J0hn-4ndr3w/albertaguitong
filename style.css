@@ -19,6 +19,7 @@
   --fs-large: 20px;
   --fs-larger: 43px;
   --fs-xlarger: 55px;
+  --fsxlarge: 60px;
   --fs-xxlarger: 75px;
 
   --fc-gold: #FFD700;
@@ -47,16 +48,16 @@
 
 .home {
   width: 600px;
-  height: 40vh;
-}
-
-.home h1{
-  font-size: var(--fs-xlarger);
+  height: 60vh;
 }
 
 .home h2{
-  font-size: var(--fs-larger);
+  font-size: var(--fs-xlarger);
 }
+
+/* .home h2{
+  font-size: var(--fs-larger);
+} */
 
 .home h3{
   width: 230px;
@@ -66,13 +67,25 @@
   font-size: var(--fs-large);
 }
 
+.homediv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.homediv h1{
+  font-size: var(--fsxlarge);
+}
+
 span{
   color: var(--fc-gold);
 }
 
 p{
   margin: 20px 0;
-  font-size: var(--fs-regular);
+  font-size: var(--fs-large);
   color: var(--fc-grey);
 }
 
@@ -519,28 +532,60 @@ button:hover {
     --fs-regular: 10px;
     --fs-large: 13px;
     --fs-larger: 16px;
-    --fs-xlarger: 20px;
+    --fs-xlarger: 23px;
     --fsxlarge: 35px;
     --fs-xxlarger: 43px;
   }
 
   .main{
     width: 100%;
-    /* display: grid;
-    grid-template-columns: repeat(1,1fr); */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .home {
+    width: 500px;
+    margin: -100px 0;
+    height: 90vh;
+  }
+  .home h2{
+    font-size: var(--fs-xxlarger);
+  }
+  .home h3{
+    font-size: var(--fs-xlarger);
+  }
+  .home p{
+    font-size: var(--fs-larger);
+  }
+
+  .homediv{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0 0 25px -30px;
+  }
+  .homediv h1{
+    font-size: var(--fsxlarge);
   }
   .section1{
     height: 100vh;
+    margin-left: 25px;
   }
   .section2{
     /* position: inherit;
     display: block; */
-    width: 50%;
-    height: 100vh;
+    width: 40%;
+    height: 40vh;
+    border-radius: 30px;
   }
   .section2 img{
-    top: 10px;
-    right: -700px;
+    width: 200px;
+    height: 400px;
+    top: -80px;
+    right: -30px;
   }
 
   /* ABOUT SECTION */
