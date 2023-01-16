@@ -522,7 +522,7 @@ button:hover {
 
 }
 
-@media (max-width: 370px) {
+@media (max-width: 480px) {
   :root {
     --fw-regular: 300;
     --fw-semibold: 600;
