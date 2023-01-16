@@ -459,7 +459,7 @@ button:hover {
   }
 
   .home p{
-    color: var(--fc-black);
+    color: var(--fc-grey);
   }
   .section2 {
     position: absolute;
@@ -509,7 +509,7 @@ button:hover {
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 370px) {
   :root {
     --fw-regular: 300;
     --fw-semibold: 600;
@@ -526,20 +526,21 @@ button:hover {
 
   .main{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr); */
   }
   .section1{
-    height: 350px;
+    height: 100vh;
   }
   .section2{
-    position: inherit;
-    display: block;
-    width: 90%;
-    height: 90vh;
+    /* position: inherit;
+    display: block; */
+    width: 50%;
+    height: 100vh;
   }
-  .section1 img{
-    right: 0;
+  .section2 img{
+    top: 10px;
+    right: -700px;
   }
 
   /* ABOUT SECTION */
