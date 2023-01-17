@@ -348,7 +348,7 @@ button:hover {
   grid-template-columns: repeat(2,1fr);
   gap: 30px;
   width: 100%;
-  height: 55vh;
+  height: 70vh;
   padding: 10px;
 }
 
