@@ -532,6 +532,8 @@ button:hover {
     width: 80%;
   }
 
+  
+
   .col-1{
     width: 96%;
   }
@@ -558,14 +560,27 @@ button:hover {
     font-size: var(--fsxlarge);
   }
   .contact{
-    height: 80vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
-  .contact .facebook, .contact .email{
-    width: 300px;
-    height: 100%;
+  .about1 h2{
+    font-size: var(--fs-larger);  
   }
+  .contact .facebook{
+    width: 300px;
+    height: 120px;
+  }
+  
+  .contact .facebook h1{
+    font-size: var(--fs-large);
+  }
+}
+
+@media (max-width: 409px) {
+  .about1 h1{
+    font-size: 25px;
+  } 
 }
 @media (max-width: 370px) {
   :root {
@@ -643,7 +658,7 @@ button:hover {
   .about1{
     top: 120px;
     left: 30px;
-    width: 80%;
+    width: 70%;
   }
 
   .col-1{
@@ -668,12 +683,19 @@ button:hover {
     font-size: var(--fsxlarge);
   }
   .contact{
-    height: 80vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
-  .contact .facebook, .contact .email{
-    width: 300px;
-    height: 100%;
+  .about1 h2{
+    font-size: var(--fs-larger);  
+  }
+  .contact .facebook{
+    width: 270px;
+    height: 120px;
+  }
+  
+  .contact .facebook h1{
+    font-size: var(--fs-large);
   }
 }
