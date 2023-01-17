@@ -560,7 +560,7 @@ button:hover {
     font-size: var(--fsxlarge);
   }
   .contact{
-    height: 90vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
@@ -683,7 +683,7 @@ button:hover {
     font-size: var(--fsxlarge);
   }
   .contact{
-    height: 90vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
