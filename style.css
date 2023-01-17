@@ -571,9 +571,6 @@ button:hover {
     width: 300px;
     height: 120px;
   }
-  .contact .email h1{
-    font-size: var(--fs-large);
-  }
   
   .contact .facebook h1{
     font-size: var(--fs-large);
@@ -693,13 +690,11 @@ button:hover {
   .about1 h2{
     font-size: var(--fs-larger);  
   }
-  .contact .facebook, .contact .email{
+  .contact .facebook{
     width: 270px;
     height: 120px;
   }
-  .contact .email h1{
-    font-size: var(--fs-large);
-  }
+  
   .contact .facebook h1{
     font-size: var(--fs-large);
   }
