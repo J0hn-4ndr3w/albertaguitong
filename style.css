@@ -344,8 +344,9 @@ button:hover {
 }
 
 .contact {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
   width: 100%;
   height: 50vh;
   padding: 10px;
@@ -363,9 +364,9 @@ button:hover {
 
 
 .email i, .facebook i{
-  color: var(--fc-black);
+  color: var(--fc-gold);
   font-size: var(--fs-xxlarger);
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .email i:hover{
@@ -378,7 +379,7 @@ button:hover {
 
 .contact .facebook, .contact .email{
   width: 400px;
-  height: 250px;
+  height: 150px;
   padding: 10px;
   text-align: center;
   border-radius: 15px;
@@ -423,7 +424,7 @@ button:hover {
   .contact {
     display: grid;
     grid-template-rows: repeat(1,1fr); 
-    height: 80vh;
+    height: 60vh;
   }
 }
 
@@ -449,76 +450,6 @@ button:hover {
     grid-template-rows: repeat(1,1fr);
   }
 
-
-}
-@media  (max-width: 660px) {
-  :root {
-    --fw-regular: 300;
-    --fw-semibold: 600;
-    --fw-bold: 700;
-  
-    --fs-small: 10px;
-    --fs-regular: 13px;
-    --fs-large: 16px;
-    --fs-larger: 20px;
-    --fs-xlarger: 43px;
-    --fs-xxlarger: 55px;
-  }
-
-  .main{
-    display: grid;
-    grid-template-rows: repeat(1,1fr);
-    position: relative;
-  }
-
-  .home p{
-    color: var(--fc-grey);
-  }
-  .section2 {
-    position: absolute;
-    z-index: -1;
-    right: 0;
-  }
-
-  .section2 img{
-    right: -600px;
-  }
-  
-
-  /* ABOUT SECTION */
-
-  .about{
-    width: 500px;
-    height: 80px;
-    margin: 20px auto 0;
-  }
-
-  /* PORTFOLIO SECTION */
-  .work {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .work a {
-    width: 400px;
-  }
-
-  /* CONTACT SECTION */
-  .contact{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    height: 100%;
-  }
-  .contact .facebook, .contact .email{
-
-    height: 200px;
-    margin: 0;
-    padding: 0;
-    gap: 0;
-  }
-  .email h2, .facebook h2{
-    top: 20px;
-  }
 
 }
 
@@ -622,9 +553,12 @@ button:hover {
     font-size: var(--fsxlarge);
   }
   .contact{
-    height: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
   }
   .contact .facebook, .contact .email{
     width: 300px;
+    height: 100%;
   }
 }
