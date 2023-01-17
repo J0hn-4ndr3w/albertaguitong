@@ -348,7 +348,7 @@ button:hover {
   grid-template-columns: repeat(2,1fr);
   gap: 30px;
   width: 100%;
-  height: 70vh;
+  height: 55vh;
   padding: 10px;
 }
 
@@ -471,12 +471,13 @@ button:hover {
   .main{
     width: 100%;
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    display: flex;
   }
   .home {
-    width: 500px;
-    margin: -100px 0;
+    position: absolute;
+    width: 300px;
+    margin: 0;
+    left: 10px;
     height: 90vh;
   }
   .home h2{
@@ -536,6 +537,10 @@ button:hover {
   }
 
   /* PORTFOLIO SECTION */
+  .work{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
   .work a{
     width: 300px;
   }
@@ -562,7 +567,6 @@ button:hover {
     height: 100%;
   }
 }
-
 @media (max-width: 370px) {
   :root {
     --fw-regular: 300;
@@ -581,12 +585,13 @@ button:hover {
   .main{
     width: 100%;
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    display: flex;
   }
   .home {
-    width: 500px;
-    margin: -100px 0;
+    position: absolute;
+    width: 250px;
+    margin: 0;
+    left: 10px;
     height: 90vh;
   }
   .home h2{
